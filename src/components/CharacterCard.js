@@ -13,17 +13,17 @@ const CardWrapper = styled.div`
     justify-content: space-around; 
     background-color: whitesmoke;
     opacity: 0.5;
-    padding: 1%;
+    // padding: 1%;
 `;
 
 export default function CharacterCard (props) {
   return (
     <div>
       <CardWrapper>
-        <h2> {props.name} </h2>
         <div className = "main-img">  
           <img src={props.image} alt ={props.name}/>
         </div>  
+        <h2> {props.name} </h2>
         <p> Status: {props.status}</p>
         <p> Species: {props.species}</p>
         <p> Type: {props.type}</p>
