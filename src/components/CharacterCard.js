@@ -16,12 +16,9 @@ const CardWrapper = styled.div`
     padding: 1%;
 `;
 
-
-
 export default function CharacterCard (props) {
   return (
     <div>
-
       <CardWrapper>
         <h2> {props.name} </h2>
         <div className = "main-img">  
@@ -31,7 +28,6 @@ export default function CharacterCard (props) {
         <p> Species: {props.species}</p>
         <p> Type: {props.type}</p>
       </CardWrapper>
-    
     </div>
   )
 }
