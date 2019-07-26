@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from "styled-components";
 
-const CardWrapper = styled.div`
+const EpiCardWrapper = styled.div`
   border: 1px solid black;
   border-radius: 5px;
   margin: 1vw;
@@ -15,14 +15,13 @@ const CardWrapper = styled.div`
   padding: 1%;
 `;
 
-export default function LocationCard (props) {
+export default function EpisodeCard (props) {
   return (
     <div>
-      <CardWrapper>
+      <EpiCardWrapper>
         <h2> {props.name} </h2>
-        <p> Type: {props.type}</p>
-        <p> Dimension: {props.dimension}</p>
-      </CardWrapper>
+        <p> Air Date: {props.airDate}</p>
+      </EpiCardWrapper>
     </div>
   )
 }
