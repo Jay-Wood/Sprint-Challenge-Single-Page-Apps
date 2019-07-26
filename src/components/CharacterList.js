@@ -22,7 +22,7 @@ export default function CharacterList() {
 
   return( 
     <section className='character-list grid-view'>
-      <h2>TODO: `array.map()` over your state here!</h2>
+      <span><h2>Characters</h2></span>
       <div> 
         
         {console.log("charData inside return", charData)}
@@ -30,6 +30,10 @@ export default function CharacterList() {
           <CharacterCard 
             name = {char.name}
             key = {char.name}
+            status = {char.status}
+            species = {char.species}
+            type = {char.type}
+            image = {char.image}
           />
         ))}
       </div>

@@ -24,6 +24,12 @@ export default function CharacterCard (props) {
 
       <CardWrapper>
         <h2> {props.name} </h2>
+        <div className = "main-img">  
+          <img src={props.image} alt ={props.name}/>
+        </div>  
+        <p> Status: {props.status}</p>
+        <p> Species: {props.species}</p>
+        <p> Type: {props.type}</p>
       </CardWrapper>
     
       <span>todo: location</span>
