@@ -4,8 +4,8 @@ import styled from "styled-components";
 const CardWrapper = styled.div`
     border: 1px solid black;
     border-radius: 5px;
-    width: 25vw;
-    max-width: 30vw;
+    // width: 25vw;
+    // max-width: 30vw;
     margin: 1vw;
     // height: 100%;
     display: flex;

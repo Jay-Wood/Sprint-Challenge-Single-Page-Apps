@@ -22,7 +22,6 @@ export default function CharacterList() {
 
   return( 
     <section className='character-list grid-view'>
-      <span><h2>Characters</h2></span>
       <div> 
         
         {console.log("charData inside return", charData)}
