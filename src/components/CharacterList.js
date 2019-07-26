@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Axios from 'axios';
 import CharacterCard from './CharacterCard';
+import jssPluginPropsSort from 'jss-plugin-props-sort';
+
 
 export default function CharacterList() {
   const [charData, setCharData] = useState([])
@@ -20,7 +22,7 @@ export default function CharacterList() {
 
   return( 
     <section className='character-list grid-view'>
-      <div> 
+      <div className = "grid-view"> 
         
         {console.log("charData inside return", charData)}
         {charData.map(char => ( 
@@ -29,8 +31,11 @@ export default function CharacterList() {
             key = {char.name}
             status = {char.status}
             species = {char.species}
-            type = {char.type}
+            type = {char.type} 
             image = {char.image}
+            origin = {char.origin}
+            location = {char.location}
+            gender = {char.gender}
           />
         ))}
       </div>

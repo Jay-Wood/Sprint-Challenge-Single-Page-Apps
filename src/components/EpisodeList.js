@@ -23,7 +23,7 @@ export default function EpisodeList() {
     console.log("epi data outside axios", episodeData);
 
     return (
-        <div className='character-list grid-view'>
+        <div className='grid-view'>
            <h2> Episodes, fool! </h2>     
             {episodeData.map(epi => (
                 <EpisodeCard 

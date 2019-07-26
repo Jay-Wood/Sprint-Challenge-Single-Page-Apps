@@ -6,18 +6,16 @@ const EpiCardWrapper = styled.div`
   border-radius: 5px;
   margin: 1vw;
   display: flex;
-  width: 100%;
-  height: 100%;
   flex-direction: column;
+  width: 100%;
   justify-content: space-around; 
   background-color: whitesmoke;
-  opacity: 0.5;
   padding: 1%;
 `;
 
 export default function EpisodeCard (props) {
   return (
-    <div>
+    <div className = "grid-view">
       <EpiCardWrapper>
         <h2> {props.name} </h2>
         <p> Air Date: {props.airDate}</p>
