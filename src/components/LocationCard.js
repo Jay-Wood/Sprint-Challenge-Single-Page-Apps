@@ -6,6 +6,8 @@ const CardWrapper = styled.div`
   border-radius: 5px;
   margin: 1vw;
   display: flex;
+  width: 100%;
+  height: 100%;
   flex-direction: column;
   justify-content: space-around; 
   background-color: whitesmoke;
@@ -24,12 +26,8 @@ export default function LocationCard (props) {
     <div>
       <CardWrapper>
         <h2> {props.name} </h2>
-        <div>  
-          <img src={props.image} alt ={props.name}/>
-        </div>  
-        <p> Status: {props.status}</p>
-        <p> Species: {props.species}</p>
         <p> Type: {props.type}</p>
+        <p> Dimension: {props.dimension}</p>
       </CardWrapper>
     </div>
   )

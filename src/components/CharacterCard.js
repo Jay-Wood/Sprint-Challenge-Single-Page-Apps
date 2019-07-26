@@ -32,8 +32,6 @@ export default function CharacterCard (props) {
         <p> Type: {props.type}</p>
       </CardWrapper>
     
-      <span>todo: location</span>
-    
     </div>
   )
 }
